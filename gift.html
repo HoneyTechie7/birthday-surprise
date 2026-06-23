@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Final Boss</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.gift-page{
+
+max-width:390px;
+
+margin:auto;
+
+padding:20px;
+
+text-align:center;
+
+}
+
+.gift{
+
+font-size:120px;
+
+cursor:pointer;
+
+transition:.5s;
+}
+
+.open{
+
+transform:scale(1.2)
+rotate(15deg);
+}
+
+.hidden{
+display:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="gift-page">
+
+<h1>🎉 GAME COMPLETED 🎉
+</h1>
+
+<p>
+Click the gift box to unlock
+your birthday surprise ❤️
+</p>
+
+<div
+id="gift"
+class="gift"
+onclick="openGift()">
+
+🎁
+
+</div>
+
+<div
+id="reward"
+class="hidden">
+
+<h2>🎉 SURPRISE UNLOCKED 🎉</h2>
+
+<p>
+    Congratulations Siva...
+
+You completed all levels ❤️
+
+You unlocked:
+
+🚗 Car King Badge
+
+🍗 Non-Veg Master Badge
+
+🚀 Dream Chaser Badge
+
+❤️ Special Person Badge
+</p>
+
+<button
+onclick="location.href='final.html'">
+
+OPEN FINAL SURPRISE
+
+</button>
+
+</div>
+
+</div>
+
+<script>
+
+function openGift(){
+
+document
+.getElementById("gift")
+.classList.add("open");
+
+document
+.getElementById("reward")
+.classList.remove("hidden");
+
+}
+
+</script>
+
+</body>
+</html>
